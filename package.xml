@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="dev.hanashi.filebase.file-sort" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[File Sort]]></packagename>
+		<packagename language="de"><![CDATA[File Sort]]></packagename>
+		<packagedescription><![CDATA[File Sort.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[File Sort.]]></packagedescription>
+		<version>1.0.0</version>
+		<date>2020-01-05</date>
+	</packageinformation>
+
+	<authorinformation>
+		<author><![CDATA[Hanashi Development]]></author>
+		<authorurl><![CDATA[https://hanashi.dev/]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+
+	<instructions type="install">
+		<!-- files -->
+		<instruction type="file" application='filebase'>files_filebase.tar</instruction>
+		
+		<!-- listener -->
+		<instruction type="eventListener" />
+	</instructions>
+</package>
