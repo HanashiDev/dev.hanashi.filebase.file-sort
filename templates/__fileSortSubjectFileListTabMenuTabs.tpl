@@ -1,0 +1,1 @@
+<li{if $sortField == 'subject'} class="active"{/if} style="order: -1; margin-right: 20px;"><a href="{link application='filebase' controller=$controllerName object=$controllerObject}sortField=subject&sortOrder=DESC{@$additionalLinkParameters}{/link}">{lang}wcf.global.name{/lang}</a></li>
